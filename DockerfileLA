@@ -1,0 +1,6 @@
+FROM python
+WORKDIR /app
+RUN pip3 install numpy
+RUN pip3 install scipy
+COPY . .
+CMD [ "python3", "la.py" ]
